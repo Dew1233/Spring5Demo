@@ -1,0 +1,13 @@
+错误出现的问题
+nested exception is java.io.FileNotFoundException
+解决方法：
+<build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
