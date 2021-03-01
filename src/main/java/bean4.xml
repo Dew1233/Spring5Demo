@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd ">
+<!--1开启组件扫描
+     1.1如果扫描多个包，多个包使用逗号隔开
+     1.2扫描包上层目录-->
+<!--  use-default-filters = "false"加了此属性就要自己设置  -->
+    <context:component-scan base-package="com.yegol.spring5.dao,com.yegol.spring5.service">
+<!--        <context:include-filter type="annotation" expression=""/>
+include包含 只能扫描这些内容-->
+<!--        <context:exclude-filter type="annotation" expression=""/>
+exclude不包含 除了exclude设置的 其他都要扫描-->
+    </context:component-scan>
+</beans>
